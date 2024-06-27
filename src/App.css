@@ -1,38 +1,114 @@
 .App {
+  width: fit-content;
+  min-width: 300px;
+  height: 80%;
+  margin: auto;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.header {
+  margin: 35px auto;
+  width: fit-content;
+}
+
+.balance {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.bal_tit {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.bal_num {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.inc_exp {
+  display: flex;
+  width: 90%;
+  background-color: rgb(254, 255, 251);
+  border: solid 1px rgb(213, 213, 213);
+  justify-content: space-around;
+  padding: 17px;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.inc_num {
+  color: green;
+  font-size: 20px;
+}
+
+.exp_num {
+  color: rgb(182, 4, 4);
+  font-size: 20px;
+}
+
+.inc_exp div span {
+  display: block;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.history {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.history h4,.add_new h4 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  margin: 20px 0 12px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.history div {
+  height: 30px;
+  border: solid 1px #ededed;
+  border-right: 5px rgb(182, 0, 0) solid;
+  border-radius: 5px;
+  width: 90%;
+  margin: 6px auto;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history div.greenbor {
+  border-right: 5px rgb(0, 182, 0) solid;
+}
+
+.add_new div label {
+  display: block;
+  font-weight: 500;
+  margin: 4px 0;
+}
+
+.add_new div input{
+  display: block;
+  font-weight: 500;
+  margin: 4px auto;
+  width: 95%;
+  padding: 6px;
+  border: #e3e3e3 solid 1px;
+  border-radius: 2px;
+}
+
+.add_new button {
+  background-color: #6a0dc7;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  width: 100%;
+  padding: 7px;
+  margin: 7px auto;
+  border: solid #e3e3e3 1px;
+  border-radius: 2px;
+  font-weight: bold;
 }
